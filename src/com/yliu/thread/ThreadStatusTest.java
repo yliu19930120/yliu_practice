@@ -14,6 +14,12 @@ package com.yliu.thread;
 public class ThreadStatusTest {
 		
 	public static void main(String[] args) {
-		
+		Thread thread = new Thread(()->System.out.println("你好"));
+		thread.start();
+		try {
+			Thread.sleep(5);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
 	}
 }
