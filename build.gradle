@@ -9,6 +9,11 @@ tasks.withType(JavaCompile) {
 }  
 
 dependencies {
+// https://mvnrepository.com/artifact/org.apache.shiro/shiro-core
+compile group: 'org.apache.shiro', name: 'shiro-core', version: '1.3.2'
+    compile project(':yliu_utils_mongo')
+
+	
     testImplementation 'junit:junit:4.12'
 }
 
